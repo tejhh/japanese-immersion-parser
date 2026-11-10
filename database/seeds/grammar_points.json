@@ -1,0 +1,384 @@
+{
+  "grammar_points": [
+    {
+      "slug": "te-iru",
+      "label": "〜ている",
+      "jlpt_level": "N5",
+      "conjugation_formula": "V-て形 + いる",
+      "meaning_en": "ongoing action or resulting state (is doing / has done)",
+      "meaning_id": "sedang melakukan / keadaan hasil suatu tindakan",
+      "example_ja": "今、本を読んでいる。",
+      "example_en": "I am reading a book now.",
+      "priority": 10,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "context": true},
+          {"surface": ["て", "で"], "pos": ["助詞", "接続助詞"]},
+          {"lemma": ["居る", "いる"], "pos": ["動詞"]}
+        ]
+      ]
+    },
+    {
+      "slug": "tai",
+      "label": "〜たい",
+      "jlpt_level": "N5",
+      "conjugation_formula": "V-ます形(語幹) + たい",
+      "meaning_en": "want to do",
+      "meaning_id": "ingin melakukan",
+      "example_ja": "日本へ行きたい。",
+      "example_en": "I want to go to Japan.",
+      "priority": 10,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "conj": "連用形", "context": true},
+          {"lemma": "たい", "pos": ["助動詞"]}
+        ]
+      ]
+    },
+    {
+      "slug": "mashou",
+      "label": "〜ましょう",
+      "jlpt_level": "N5",
+      "conjugation_formula": "V-ます形(語幹) + ましょう",
+      "meaning_en": "let's do (volitional, polite)",
+      "meaning_id": "mari / ayo melakukan",
+      "example_ja": "一緒に食べましょう。",
+      "example_en": "Let's eat together.",
+      "priority": 5,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "conj": "連用形", "context": true},
+          {"lemma": "ます", "pos": ["助動詞"], "conj": "意志推量形"}
+        ]
+      ]
+    },
+    {
+      "slug": "naide-kudasai",
+      "label": "〜ないでください",
+      "jlpt_level": "N5",
+      "conjugation_formula": "V-ない形 + でください",
+      "meaning_en": "please do not do",
+      "meaning_id": "tolong jangan melakukan",
+      "example_ja": "ここで写真を撮らないでください。",
+      "example_en": "Please do not take photos here.",
+      "priority": 20,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "conj": "未然形", "context": true},
+          {"lemma": "ない", "pos": ["助動詞"]},
+          {"surface": "で"},
+          {"lemma": ["下さる", "くださる"]}
+        ]
+      ]
+    },
+    {
+      "slug": "te-mo-ii",
+      "label": "〜てもいい",
+      "jlpt_level": "N5",
+      "conjugation_formula": "V-て形 + もいい",
+      "meaning_en": "it is okay to / may do",
+      "meaning_id": "boleh melakukan",
+      "example_ja": "窓を開けてもいいですか。",
+      "example_en": "May I open the window?",
+      "priority": 15,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "context": true},
+          {"surface": ["て", "で"], "pos": ["助詞", "接続助詞"]},
+          {"surface": "も", "pos": ["助詞"]},
+          {"lemma": ["良い", "いい", "よい"], "pos": ["形容詞"]}
+        ]
+      ]
+    },
+    {
+      "slug": "nakereba-naranai",
+      "label": "〜なければならない / いけない",
+      "jlpt_level": "N4",
+      "conjugation_formula": "V-ない形(語幹) + なければ + ならない / いけない",
+      "meaning_en": "must do / have to",
+      "meaning_id": "harus melakukan",
+      "example_ja": "明日までに宿題を出さなければならない。",
+      "example_en": "I have to hand in my homework by tomorrow.",
+      "priority": 30,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "conj": "未然形", "context": true},
+          {"lemma": "ない", "conj": "仮定形"},
+          {"surface": "ば"},
+          {"lemma": ["成る", "なる", "行ける", "いける"]},
+          {"lemma": "ない"}
+        ]
+      ]
+    },
+    {
+      "slug": "ta-koto-ga-aru",
+      "label": "〜たことがある",
+      "jlpt_level": "N4",
+      "conjugation_formula": "V-た形 + ことがある",
+      "meaning_en": "have the experience of doing",
+      "meaning_id": "pernah melakukan",
+      "example_ja": "富士山に登ったことがある。",
+      "example_en": "I have climbed Mt. Fuji before.",
+      "priority": 25,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "context": true},
+          {"lemma": ["た", "だ"], "pos": ["助動詞"]},
+          {"surface": ["こと", "事"]},
+          {"surface": ["が", "は", "も"], "pos": ["助詞"]},
+          {"lemma": ["有る", "ある"]}
+        ]
+      ]
+    },
+    {
+      "slug": "sou-da-appearance",
+      "label": "〜そうだ (様態)",
+      "jlpt_level": "N4",
+      "conjugation_formula": "V-ます形(語幹) / い-Adj(語幹) + そうだ",
+      "meaning_en": "looks like / seems about to",
+      "meaning_id": "kelihatannya / tampaknya akan",
+      "example_ja": "雨が降りそうだ。",
+      "example_en": "It looks like it is going to rain.",
+      "priority": 10,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "conj": "連用形", "context": true},
+          {"surface": "そう", "pos": ["形状詞", "助動詞語幹"]}
+        ],
+        [
+          {"pos": ["形容詞"], "conj": "語幹", "context": true},
+          {"surface": "そう", "pos": ["形状詞", "助動詞語幹"]}
+        ]
+      ]
+    },
+    {
+      "slug": "you-ni-naru",
+      "label": "〜ようになる",
+      "jlpt_level": "N4",
+      "conjugation_formula": "V-辞書形 / V-ない形 + ようになる",
+      "meaning_en": "come to (be able to) do; a gradual change",
+      "meaning_id": "menjadi bisa / mulai (perubahan bertahap)",
+      "example_ja": "日本語が話せるようになった。",
+      "example_en": "I became able to speak Japanese.",
+      "priority": 20,
+      "token_patterns": [
+        [
+          {"pos": [["動詞"], ["助動詞"]], "context": true},
+          {"surface": ["よう", "様"], "pos": ["形状詞", "助動詞語幹"]},
+          {"surface": "に"},
+          {"lemma": ["成る", "なる"]}
+        ]
+      ]
+    },
+    {
+      "slug": "te-shimau",
+      "label": "〜てしまう",
+      "jlpt_level": "N4",
+      "conjugation_formula": "V-て形 + しまう",
+      "meaning_en": "do completely; do something regrettable",
+      "meaning_id": "terlanjur / sudah selesai melakukan",
+      "example_ja": "財布を忘れてしまった。",
+      "example_en": "I (unfortunately) forgot my wallet.",
+      "priority": 15,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "context": true},
+          {"surface": ["て", "で"], "pos": ["助詞", "接続助詞"]},
+          {"lemma": ["仕舞う", "しまう"]}
+        ]
+      ]
+    },
+    {
+      "slug": "ta-bakari",
+      "label": "〜たばかり",
+      "jlpt_level": "N3",
+      "conjugation_formula": "V-た形 + ばかり",
+      "meaning_en": "have just done",
+      "meaning_id": "baru saja melakukan",
+      "example_ja": "さっき起きたばかりだ。",
+      "example_en": "I just woke up a moment ago.",
+      "priority": 20,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "context": true},
+          {"lemma": ["た", "だ"], "pos": ["助動詞"]},
+          {"surface": ["ばかり", "ばっかり"], "pos": ["助詞"]}
+        ]
+      ]
+    },
+    {
+      "slug": "wake-dewa-nai",
+      "label": "〜わけではない",
+      "jlpt_level": "N3",
+      "conjugation_formula": "普通形 + わけではない",
+      "meaning_en": "it does not mean that / not necessarily",
+      "meaning_id": "bukan berarti / tidak selalu",
+      "example_ja": "嫌いなわけではない。",
+      "example_en": "It is not that I dislike it.",
+      "priority": 25,
+      "token_patterns": [
+        [
+          {"surface": ["わけ", "訳"]},
+          {"surface": ["で", "じゃ"]},
+          {"surface": "は", "optional": true},
+          {"lemma": ["ない", "無い"]}
+        ]
+      ]
+    },
+    {
+      "slug": "koto-ni-suru",
+      "label": "〜ことにする",
+      "jlpt_level": "N3",
+      "conjugation_formula": "V-辞書形 / V-ない形 + ことにする",
+      "meaning_en": "decide to do",
+      "meaning_id": "memutuskan untuk",
+      "example_ja": "毎日運動することにした。",
+      "example_en": "I decided to exercise every day.",
+      "priority": 20,
+      "token_patterns": [
+        [
+          {"pos": [["動詞"], ["助動詞"]], "context": true},
+          {"surface": ["こと", "事"]},
+          {"surface": "に"},
+          {"lemma": ["為る", "する"]}
+        ]
+      ]
+    },
+    {
+      "slug": "ni-tsuite",
+      "label": "〜について",
+      "jlpt_level": "N3",
+      "conjugation_formula": "N + について",
+      "meaning_en": "about / concerning",
+      "meaning_id": "tentang / mengenai",
+      "example_ja": "日本の文化について話す。",
+      "example_en": "Talk about Japanese culture.",
+      "priority": 10,
+      "token_patterns": [
+        [{"surface": ["について", "に就いて", "につき"]}],
+        [
+          {"surface": "に", "pos": ["助詞"]},
+          {"lemma": ["就く", "つく"]},
+          {"surface": "て"}
+        ]
+      ]
+    },
+    {
+      "slug": "ni-mo-kakawarazu",
+      "label": "〜にもかかわらず",
+      "jlpt_level": "N2",
+      "conjugation_formula": "N / 普通形 + にもかかわらず",
+      "meaning_en": "despite / in spite of",
+      "meaning_id": "meskipun / walaupun",
+      "example_ja": "雨にもかかわらず、試合は行われた。",
+      "example_en": "Despite the rain, the match was held.",
+      "priority": 30,
+      "token_patterns": [
+        [{"surface": ["にもかかわらず", "にも関わらず", "にも拘らず", "にも拘わらず"]}],
+        [
+          {"surface": "に"},
+          {"surface": "も"},
+          {"lemma": ["拘る", "関わる", "係る", "かかわる"]},
+          {"lemma": "ず"}
+        ]
+      ]
+    },
+    {
+      "slug": "zaru-wo-enai",
+      "label": "〜ざるを得ない",
+      "jlpt_level": "N2",
+      "conjugation_formula": "V-ない形(語幹) + ざるを得ない (する→せざるを得ない)",
+      "meaning_en": "cannot help but / have no choice but to",
+      "meaning_id": "mau tidak mau harus / terpaksa",
+      "example_ja": "中止せざるを得ない。",
+      "example_en": "We have no choice but to cancel.",
+      "priority": 30,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "conj": "未然形", "context": true},
+          {"surface": "ざる"},
+          {"surface": "を"},
+          {"lemma": ["得る", "える"]},
+          {"lemma": "ない"}
+        ]
+      ]
+    },
+    {
+      "slug": "ni-chigainai",
+      "label": "〜に違いない",
+      "jlpt_level": "N2",
+      "conjugation_formula": "N / 普通形 + に違いない",
+      "meaning_en": "must be / no doubt that",
+      "meaning_id": "pasti / tidak salah lagi",
+      "example_ja": "彼は犯人に違いない。",
+      "example_en": "He must be the culprit.",
+      "priority": 25,
+      "token_patterns": [
+        [
+          {"surface": "に"},
+          {"surface": ["違い", "ちがい"]},
+          {"lemma": ["無い", "ない"]}
+        ]
+      ]
+    },
+    {
+      "slug": "zu-ni-wa-irarenai",
+      "label": "〜ずにはいられない",
+      "jlpt_level": "N1",
+      "conjugation_formula": "V-ない形(語幹) + ずにはいられない",
+      "meaning_en": "cannot help doing; cannot refrain from",
+      "meaning_id": "tidak bisa tidak (melakukan)",
+      "example_ja": "その話を聞いて、笑わずにはいられなかった。",
+      "example_en": "Hearing that story, I couldn't help laughing.",
+      "priority": 40,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "conj": "未然形", "context": true},
+          {"lemma": "ず"},
+          {"surface": "に"},
+          {"surface": "は"},
+          {"lemma": ["居る", "いる"]},
+          {"lemma": ["られる", "れる"]},
+          {"lemma": "ない"}
+        ]
+      ]
+    },
+    {
+      "slug": "n-bakari",
+      "label": "〜んばかり",
+      "jlpt_level": "N1",
+      "conjugation_formula": "V-ない形(語幹) + んばかり (する→せんばかり)",
+      "meaning_en": "as if about to; on the verge of",
+      "meaning_id": "seolah-olah akan",
+      "example_ja": "泣かんばかりの顔をしていた。",
+      "example_en": "He looked as if he were about to cry.",
+      "priority": 35,
+      "token_patterns": [
+        [
+          {"pos": ["動詞"], "conj": "未然形", "context": true},
+          {"surface": "ん"},
+          {"surface": "ばかり"}
+        ]
+      ]
+    },
+    {
+      "slug": "to-mo-naru-to",
+      "label": "〜ともなると",
+      "jlpt_level": "N1",
+      "conjugation_formula": "N + ともなると / ともなれば",
+      "meaning_en": "once (one) becomes / when it comes to",
+      "meaning_id": "kalau sudah menjadi / apabila sampai pada",
+      "example_ja": "大学生ともなると、自分で考えなければならない。",
+      "example_en": "Once you are a university student, you have to think for yourself.",
+      "priority": 35,
+      "token_patterns": [
+        [
+          {"surface": "と"},
+          {"surface": "も"},
+          {"lemma": ["成る", "なる"]},
+          {"surface": ["と", "ば"]}
+        ]
+      ]
+    }
+  ]
+}

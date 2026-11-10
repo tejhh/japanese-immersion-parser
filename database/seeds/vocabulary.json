@@ -1,0 +1,28 @@
+{
+  "_note": "Small illustrative sample. Import a full, properly licensed JLPT word list for production use.",
+  "vocabulary": [
+    {"lemma": "食べる", "reading": "タベル", "part_of_speech": "動詞", "jlpt_level": "N5", "meaning_en": "to eat"},
+    {"lemma": "行く", "reading": "イク", "part_of_speech": "動詞", "jlpt_level": "N5", "meaning_en": "to go"},
+    {"lemma": "読む", "reading": "ヨム", "part_of_speech": "動詞", "jlpt_level": "N5", "meaning_en": "to read"},
+    {"lemma": "本", "reading": "ホン", "part_of_speech": "名詞", "jlpt_level": "N5", "meaning_en": "book"},
+    {"lemma": "学校", "reading": "ガッコウ", "part_of_speech": "名詞", "jlpt_level": "N5", "meaning_en": "school"},
+    {"lemma": "今日", "reading": "キョウ", "part_of_speech": "名詞", "jlpt_level": "N5", "meaning_en": "today"},
+    {"lemma": "雨", "reading": "アメ", "part_of_speech": "名詞", "jlpt_level": "N5", "meaning_en": "rain"},
+    {"lemma": "宿題", "reading": "シュクダイ", "part_of_speech": "名詞", "jlpt_level": "N5", "meaning_en": "homework"},
+    {"lemma": "忘れる", "reading": "ワスレル", "part_of_speech": "動詞", "jlpt_level": "N5", "meaning_en": "to forget"},
+    {"lemma": "文化", "reading": "ブンカ", "part_of_speech": "名詞", "jlpt_level": "N4", "meaning_en": "culture"},
+    {"lemma": "財布", "reading": "サイフ", "part_of_speech": "名詞", "jlpt_level": "N4", "meaning_en": "wallet"},
+    {"lemma": "運動", "reading": "ウンドウ", "part_of_speech": "名詞", "jlpt_level": "N4", "meaning_en": "exercise"},
+    {"lemma": "試合", "reading": "シアイ", "part_of_speech": "名詞", "jlpt_level": "N4", "meaning_en": "match, game"},
+    {"lemma": "経験", "reading": "ケイケン", "part_of_speech": "名詞", "jlpt_level": "N4", "meaning_en": "experience"},
+    {"lemma": "中止", "reading": "チュウシ", "part_of_speech": "名詞", "jlpt_level": "N3", "meaning_en": "cancellation"},
+    {"lemma": "決める", "reading": "キメル", "part_of_speech": "動詞", "jlpt_level": "N3", "meaning_en": "to decide"},
+    {"lemma": "環境", "reading": "カンキョウ", "part_of_speech": "名詞", "jlpt_level": "N3", "meaning_en": "environment"},
+    {"lemma": "犯人", "reading": "ハンニン", "part_of_speech": "名詞", "jlpt_level": "N2", "meaning_en": "criminal, culprit"},
+    {"lemma": "影響", "reading": "エイキョウ", "part_of_speech": "名詞", "jlpt_level": "N2", "meaning_en": "influence"},
+    {"lemma": "検討", "reading": "ケントウ", "part_of_speech": "名詞", "jlpt_level": "N2", "meaning_en": "examination, consideration"},
+    {"lemma": "懸念", "reading": "ケネン", "part_of_speech": "名詞", "jlpt_level": "N1", "meaning_en": "concern, worry"},
+    {"lemma": "顕著", "reading": "ケンチョ", "part_of_speech": "形状詞", "jlpt_level": "N1", "meaning_en": "remarkable, striking"},
+    {"lemma": "覆す", "reading": "クツガエス", "part_of_speech": "動詞", "jlpt_level": "N1", "meaning_en": "to overturn"}
+  ]
+}

@@ -1,0 +1,8 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30
+pydantic>=2.7,<3.0
+pydantic-settings>=2.3
+sudachipy>=0.6.8
+sudachidict_core>=20240409
+psycopg[binary]>=3.2
+psycopg-pool>=3.2
